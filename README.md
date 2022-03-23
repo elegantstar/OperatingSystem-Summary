@@ -278,11 +278,11 @@ STORE R1 to count
 
 critical section problem을 해결하기 위해서는 아래의 세 가지 조건을 만족해야 한다.
 
-- **Mutual Exclusion(상호 배제)**
+- **Mutual Exclusion(상호 배제)**  
   프로세스 P_i가 자신의 critical section에서 실행 중이라면 다른 프로세스들은 각자의 critical section에서 동시에 실행될 수 없다.
-- **Progress(진행)**
+- **Progress(진행)**  
   ciritical section에서 현재 실행 중인 프로세스가 없는 상태에서 각자의 critical section에 진입하려는 프로세스들이 있는 경우, 나머지 영역에서 실행 중이지 않은 프로세스들만 critical section 진입 후보가 될 수 있다.
-- **Bounded Waiting(한정적 대기)**
+- **Bounded Waiting(한정적 대기)**  
   critical section에 한 번 진입했던 프로세스는 다음에 다시 critical section에 진입하도록 허용하기까지 횟수에 제한을 둔다. 이는 한 프로세스가 경쟁에 밀려 critical section에 진입하지 못하고 무한히 기다리는 statvation 현상을 방지하기 위함이다.
 
 <br>
@@ -321,7 +321,7 @@ critical section problem을 해결하기 위해서는 아래의 세 가지 조�
 - Binary Semaphore (초기값: value = 1)
   Mutex와 동일하게 value는 0과 1만을 가질 수 있다. 다중프로세스들 사이의 Critical section problem을 해결하기 위해 사용된다.
 
-**Deadlock(교착상태)**
+**Deadlock(교착상태)**  
 **`교착상태(Deadlock)`란 프로세스 A와 프로세스 B가 서로 상대방이 쥐고 있는 자원을 요구하며 무한 대기 상태에 빠지는 현상**을 의미한다.
 
 #### Monitor(모니터)
